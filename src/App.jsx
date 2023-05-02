@@ -2,10 +2,10 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 
 function App() {
   const { unityProvider, loadingProgression, isLoaded } = useUnityContext({
-    loaderUrl: "/teste/Build/teste.loader.js",
-    dataUrl: "/teste/Build/teste.data",
-    frameworkUrl: "/teste/Build/teste.framework.js",
-    codeUrl: "/teste/Build/teste.wasm",
+    loaderUrl: "/aviator/Build/aviator teste.loader.js",
+    dataUrl: "/aviator/Build/aviator teste.data",
+    frameworkUrl: "/aviator/Build/aviator teste.framework.js",
+    codeUrl: "/aviator/Build/aviator teste.wasm",
     productName: "Aviator prototipo",
 
   });
@@ -14,10 +14,13 @@ function App() {
     {!isLoaded && (
       <p>Loading Application... {Math.round(loadingProgression * 100)}%</p>
     )}
+    <div style={{height: '50%', width : '50%'}}>
+
     <Unity
       unityProvider={unityProvider}
-      style={{ visibility: isLoaded ? "visible" : "hidden", height:'60%', width:'60%', padding:'100px' }}
-    />
+      style={{ visibility: isLoaded ? "visible" : "hidden", height: '100%', width: '100%'}}
+      />
+    </div>
   </div>
   )
 }
