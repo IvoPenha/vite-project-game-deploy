@@ -2,11 +2,11 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 
 function App() {
   const { unityProvider, loadingProgression, isLoaded } = useUnityContext({
-    loaderUrl: "/aviator/Build/aviator teste.loader.js",
-    dataUrl: "/aviator/Build/aviator teste.data",
-    frameworkUrl: "/aviator/Build/aviator teste.framework.js",
-    codeUrl: "/aviator/Build/aviator teste.wasm",
-    productName: "Aviator prototipo",
+    loaderUrl: "/Aviator P Deploy/Build/Aviator P Deploy.loader.js",
+    dataUrl: "/Aviator P Deploy/Build/Aviator P Deploy.data",
+    frameworkUrl: "/Aviator P Deploy/Build/Aviator P Deploy.framework.js",
+    codeUrl: "/Aviator P Deploy/Build/Aviator P Deploy.wasm",
+    productName: "Aviator P Deploy prototipo",
 
   });
 
